@@ -1,33 +1,23 @@
 const projects = [
   {
     number: '01',
-    title: 'The Gibson Company',
-    description: 'A considered home for experiments, essays, and useful things built between client work and curiosity.',
-    tags: ['Next.js', 'TypeScript', 'Design'],
-    accent: 'gold',
-    category: 'Independent / 2026',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85',
-    imageAlt: 'Close-up of a circuit board',
-  },
-  {
-    number: '02',
-    title: 'Reliable by default',
-    description: 'Patterns for shipping calm, observable software: clear boundaries, thoughtful APIs, and fewer surprises.',
-    tags: ['Architecture', 'C#', 'Cloud'],
-    accent: 'mint',
-    category: 'Practice / ongoing',
-    image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=85',
-    imageAlt: 'Code editor showing a software project',
-  },
-  {
-    number: '03',
-    title: 'In the air',
-    description: 'A small digital logbook for learning to fly, tracking lessons, milestones, and the long way up.',
-    tags: ['Writing', 'Aviation', 'Progress'],
+    title: 'wxCoPilot',
+    description: (
+      <>
+        <p>WxCoPilot is an <strong>aviation weather and flight decision tool</strong> built specifically for <strong>UK student and private pilots</strong>.</p>
+        <p>The platform helps pilots assess weather conditions and make safe flying choices through three core features:</p>
+        <ul>
+          <li><strong>Flyability Score:</strong> Rates the upcoming 7 days on a scale of 0–100 based on the pilot&apos;s specific aircraft type and personal weather limits.</li>
+          <li><strong>Flight Decision:</strong> Provides automated go/no-go recommendations by analyzing current and forecasted aviation conditions against aircraft parameters.</li>
+          <li><strong>Flight &amp; Lesson Snapshot:</strong> Allows pilots to input planned dates and times to quickly check the go/no-go safety status for individual upcoming flights.</li>
+        </ul>
+      </>
+    ),
+    tags: ['Aviation', 'Software', 'Planning', 'Weather', 'Flight Safety'],
     accent: 'blue',
-    category: 'Personal / ongoing',
-    image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85',
-    imageAlt: 'Aircraft flying above clouds',
+    category: 'Work In Progress / 2026',
+    image: '/images/wxcopilotlogo.png',
+    imageAlt: 'WxCoPilot logo',
   },
 ]
 
@@ -76,7 +66,7 @@ export default function Home() {
 
       <section className="section shell" id="work">
         <div className="section-heading"><div><p className="eyebrow">Selected work</p><h2>Things with<br /><em>somewhere to go.</em></h2></div><p className="section-intro">A mix of professional practice and personal projects. Each one is an excuse to learn something properly.</p></div>
-        <div className="project-list">{projects.map((project) => <article className={`project project-${project.accent}`} key={project.number}><div className="project-mark"><span>{project.number}</span><span className="arrow">↗</span></div><div className="project-image-wrap"><img className="project-image" src={project.image} alt={project.imageAlt} loading="lazy" /></div><div className="project-content"><p className="project-category">{project.category}</p><h3>{project.title}</h3><p>{project.description}</p><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div></article>)}</div>
+        <div className="project-list">{projects.map((project) => <article className={`project project-${project.accent}`} key={project.number}><div className="project-mark"><span>{project.number}</span><span className="arrow">↗</span></div><div className="project-image-wrap"><img className="project-image" src={project.image} alt={project.imageAlt} loading="lazy" /></div><div className="project-content"><p className="project-category">{project.category}</p><h3>{project.title}</h3><div className="project-description">{project.description}</div><div className="tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></div></article>)}</div>
       </section>
 
       <section className="manifesto"><div className="shell manifesto-inner"><p className="eyebrow">How I work</p><blockquote>“Make it clear enough to change, and solid enough to trust.”</blockquote><p className="manifesto-credit">A simple standard for software, teams, and the things I choose to spend time on.</p></div></section>
