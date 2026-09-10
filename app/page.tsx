@@ -15,9 +15,9 @@ const projects = [
 ]
 
 const interests = [
-  ['01', 'Aviation', 'Learning to fly and working towards an NPPL. The best reminder that progress is made one careful lesson at a time.'],
-  ['02', 'Technology', 'Following the edges of what is becoming possible, especially where AI, product thinking, and craft meet.'],
-  ['03', 'Mentoring', 'Making room for people early in their careers to ask better questions and find their own stride.'],
+  ['01', 'Aviation', 'Learning to fly and working towards an NPPL. The best reminder that progress is made one careful lesson at a time.', '/aviation'],
+  ['02', 'Technology', 'Following the edges of what is becoming possible, especially where AI, product thinking, and craft meet.', '/interests#technology'],
+  ['03', 'Mentoring', 'Making room for people early in their careers to ask better questions and find their own stride.', '/interests#mentoring'],
 ]
 
 export default function Home() {
@@ -50,10 +50,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="signal-band" id="about">
-        <div className="shell signal-grid">
-          <p className="eyebrow">A few useful signals</p>
-          <div className="signals"><div><strong>20+</strong><span>enterprise<br />projects</span></div><div><strong>20+</strong><span>people<br />mentored</span></div><div><strong>∞</strong><span>curiosity<br />remaining</span></div></div>
+      <section className="about-section" id="about">
+        <div className="shell about-grid">
+          <div className="about-heading"><p className="eyebrow">About Andrew</p><h2>Useful work,<br /><em>thoughtfully made.</em></h2></div>
+          <div className="about-copy"><p>I&apos;m a senior software developer based in Lisburn, Northern Ireland. I help teams design, modernise, and ship dependable digital products.</p><p>My work sits between systems thinking and human judgement: making complex things clearer, creating space for good decisions, and building software that can change without losing its shape.</p><div className="signals"><div><strong>20+</strong><span>enterprise<br />projects</span></div><div><strong>20+</strong><span>people<br />mentored</span></div><div><strong>∞</strong><span>curiosity<br />remaining</span></div></div></div>
         </div>
       </section>
 
@@ -66,7 +66,7 @@ export default function Home() {
 
       <section className="section shell interests" id="interests">
         <div className="section-heading"><div><p className="eyebrow">Outside the editor</p><h2>More than<br /><em>just software.</em></h2></div><p className="section-intro">The interests that keep the work fresh, the perspective wide, and the calendar occasionally full of surprises.</p></div>
-        <div className="interest-list">{interests.map(([number, title, description]) => <article className="interest" key={number}><span className="interest-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="interest-arrow">↗</span></article>)}</div>
+        <div className="interest-list">{interests.map(([number, title, description, url]) => <a className="interest" href={url} key={number}><span className="interest-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="interest-arrow">↗</span></a>)}</div>
       </section>
 
       <footer className="footer"><div className="shell footer-main"><div><p className="eyebrow">Have a good problem?</p><h2>Let&apos;s make<br /><em>something useful.</em></h2></div><a className="footer-email" href="mailto:andrew@thegibsons.info">andrew@thegibsons.info <span>↗</span></a></div><div className="shell footer-bottom"><span>© 2026 Andrew Gibson</span><span>Built with care in Northern Ireland</span><a href="#home">Back to top ↑</a></div></footer>
