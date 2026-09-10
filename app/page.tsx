@@ -41,7 +41,6 @@ export default function Home() {
           <p className="hero-intro">I&apos;m Andrew, a senior software developer helping teams design, modernise, and ship dependable digital products. I care about clear systems, thoughtful teams, and the next interesting idea.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">Explore the work <span>↓</span></a>
-            <a className="text-link" href="https://github.com" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
           </div>
         </div>
         <div className="hero-aside">
