@@ -41,6 +41,7 @@ export default function Home() {
           <p className="hero-intro">I&apos;m Andrew, a senior software developer helping teams design, modernise, and ship dependable digital products. I care about clear systems, thoughtful teams, and the next interesting idea.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#work">Explore the work <span>↓</span></a>
+            <a className="button button-light" href="https://www.linkedin.com/in/andrewgibsonni/" target="_blank" rel="noreferrer"><svg className="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 8.1H1.7V22h3.5V8.1ZM3.45 2A2.05 2.05 0 1 0 3.45 6.1 2.05 2.05 0 0 0 3.45 2ZM22.3 14.03c0-4.18-2.23-6.13-5.2-6.13-2.4 0-3.47 1.32-4.08 2.25V8.1H9.5V22h3.52v-6.88c0-1.81.34-3.57 2.59-3.57 2.21 0 2.24 2.07 2.24 3.69V22h3.52l.93-7.97Z" /></svg>LinkedIn <span>↗</span></a>
           </div>
         </div>
         <div className="hero-aside">
@@ -52,7 +53,7 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="shell about-grid">
           <div className="about-heading"><p className="eyebrow">About Andrew</p><h2>Useful work,<br /><em>thoughtfully made.</em></h2></div>
-          <div className="about-copy"><p>I&apos;m a senior software developer based in Lisburn, Northern Ireland. I help teams design, modernise, and ship dependable digital products.</p><p>My work sits between systems thinking and human judgement: making complex things clearer, creating space for good decisions, and building software that can change without losing its shape.</p><div className="signals"><div><strong>20+</strong><span>enterprise<br />projects</span></div><div><strong>20+</strong><span>people<br />mentored</span></div><div><strong>∞</strong><span>curiosity<br />remaining</span></div></div></div>
+          <div className="about-copy"><p>With over 25 years of experience, I combine deep technical expertise with a passion for solving complex challenges. I excel in guiding teams through the full software development lifecycle, leveraging technologies like JavaScript, Next.js, and .NET to deliver high-quality solutions.</p><p>As both a Senior Developer and Agile Scrum Master, I have a proven track record of leading high-performing teams, optimising workflows, and delivering projects on time and with precision. My approach blends strong technical skills with Agile best practices to ensure adaptability, continuous improvement, and rapid delivery.</p><p>Driven by a continuous learning mindset, I stay ahead of industry trends, embracing new tools and methodologies to create impactful, future-ready solutions.</p><div className="signals"><div><strong>20+</strong><span>enterprise<br />projects</span></div><div><strong>20+</strong><span>people<br />mentored</span></div><div><strong>∞</strong><span>curiosity<br />remaining</span></div></div></div>
         </div>
       </section>
 
