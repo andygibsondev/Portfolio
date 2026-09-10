@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <div className="topline" aria-hidden="true"><span>AG / 2026</span><span>Lisburn, Northern Ireland</span></div>
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="#home">Andrew<span>.</span></a>
+        <a className="wordmark" href="#home">Andrew<span>.</span>Gibson</a>
         <div className="nav-links">
           <a href="#work">Work</a>
           <a href="#about">About</a>
