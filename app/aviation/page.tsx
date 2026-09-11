@@ -42,8 +42,10 @@ export default function AviationPage() {
           <h1>The long way<br /><em>up.</em></h1>
           <p className="aviation-lede">Flight notes from learning to fly, working towards an NPPL, and paying attention to what the sky has to teach.</p>
         </div>
-        <div className="aviation-orbit" aria-hidden="true"><span className="aviation-orbit-line aviation-orbit-line-one" /><span className="aviation-orbit-line aviation-orbit-line-two" /><span className="aviation-orbit-dot" /><span className="aviation-orbit-label">FLY<br /><small>carefully</small></span></div>
+
       </header>
+
+      <div className="shell aviation-channel-link"><a className="button button-light aviation-youtube" href="https://www.youtube.com/@pilotandyuk" target="_blank" rel="noreferrer"><svg className="youtube-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z" /></svg>Watch on YouTube <span>↗</span></a></div>
 
       <section className="aviation-intro shell">
         <p className="eyebrow">Why this journal exists</p>
