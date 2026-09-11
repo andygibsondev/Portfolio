@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SiteNav from '../components/site-nav'
 
 export const metadata: Metadata = {
   title: 'WxCoPilot | Andrew Gibson',
@@ -27,10 +28,7 @@ export default function WxCoPilotPage() {
   return (
     <main className="project-page">
       <div className="topline" aria-hidden="true"><span>AG / 2026</span><span>Project 01 / WxCoPilot</span></div>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="/">Andrew<span>.</span></a>
-        <a className="nav-contact" href="/">Back to portfolio <span>↩</span></a>
-      </nav>
+      <SiteNav />
 
       <section className="project-hero shell">
         <div className="project-hero-copy">

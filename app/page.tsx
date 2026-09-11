@@ -1,3 +1,5 @@
+import SiteNav from './components/site-nav'
+
 const projects = [
   {
     number: '01',
@@ -15,24 +17,16 @@ const projects = [
 ]
 
 const interests = [
-  ['01', 'Aviation', 'Learning to fly and working towards an NPPL. The best reminder that progress is made one careful lesson at a time.', '/aviation'],
-  ['02', 'Technology', 'Following the edges of what is becoming possible, especially where AI, product thinking, and craft meet.', '/interests#technology'],
-  ['03', 'Mentoring', 'Making room for people early in their careers to ask better questions and find their own stride.', '/interests#mentoring'],
+  ['01', 'Aviation', 'Learning to fly and working towards an NPPL. The best reminder that progress is made one careful lesson at a time.', '/aviation', 'Read the journal'],
+  ['02', 'Technology', 'Following the edges of what is becoming possible, especially where AI, product thinking, and craft meet.', '/interests#technology', 'Explore technology'],
+  ['03', 'Mentoring', 'Making room for people early in their careers to ask better questions and find their own stride.', '/interests#mentoring', 'Read more'],
 ]
 
 export default function Home() {
   return (
     <main>
       <div className="topline" aria-hidden="true"><span>AG / 2026</span><span>Lisburn, Northern Ireland</span></div>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="#home">Andrew<span>.</span>Gibson</a>
-        <div className="nav-links">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#interests">Interests</a>
-        </div>
-        <a className="nav-contact" href="mailto:andrew@thegibsons.info">Let&apos;s talk <span>↗</span></a>
-      </nav>
+      <SiteNav home />
 
       <section className="hero shell" id="home">
         <div className="hero-copy">
@@ -66,7 +60,7 @@ export default function Home() {
 
       <section className="section shell interests" id="interests">
         <div className="section-heading"><div><p className="eyebrow">Outside the editor</p><h2>More than<br /><em>just software.</em></h2></div><p className="section-intro">The interests that keep the work fresh, the perspective wide, and the calendar occasionally full of surprises.</p></div>
-        <div className="interest-list">{interests.map(([number, title, description, url]) => <a className="interest" href={url} key={number}><span className="interest-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="interest-arrow">↗</span></a>)}</div>
+        <div className="interest-list">{interests.map(([number, title, description, url, linkLabel]) => <a className="interest" href={url} key={number}><span className="interest-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="interest-link">{linkLabel}<span aria-hidden="true">↗</span></span></a>)}</div>
       </section>
 
       <footer className="footer"><div className="shell footer-main"><div><p className="eyebrow">Have a good problem?</p><h2>Let&apos;s make<br /><em>something useful.</em></h2></div><a className="footer-email" href="mailto:andrew@thegibsons.info">andrew@thegibsons.info <span>↗</span></a></div><div className="shell footer-bottom"><span>© 2026 Andrew Gibson</span><span>Built with care in Northern Ireland</span><a href="#home">Back to top ↑</a></div></footer>

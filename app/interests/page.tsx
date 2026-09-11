@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SiteNav from '../components/site-nav'
 
 export const metadata: Metadata = {
   title: 'Outside the editor | Andrew Gibson',
@@ -33,10 +34,7 @@ export default function InterestsPage() {
   return (
     <main className="interests-page">
       <div className="topline" aria-hidden="true"><span>AG / 2026</span><span>Outside the editor</span></div>
-      <nav className="nav shell" aria-label="Main navigation">
-        <a className="wordmark" href="/">Andrew<span>.</span></a>
-        <a className="nav-contact" href="/">Back to portfolio <span>↩</span></a>
-      </nav>
+      <SiteNav />
 
       <header className="interests-hero shell">
         <p className="eyebrow">Outside the editor</p>
